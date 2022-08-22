@@ -46,7 +46,7 @@
         background: url(../imagens/67de04ff23291087f134473449315612.jpg) no-repeat;
         background-position: 24px -160px;
         background-size: cover;
-        background-color: rgb(70, 85, 168);
+        background-color: #4655a8;
     }
 
     header a i{
@@ -93,7 +93,7 @@
         align-items: center;
         margin-bottom: 5px;
         bottom: 0;
-        left: 10px;
+        left: 20px;
         width: 90vw;
         align-content: center;
         border-radius: 10px;
