@@ -25,7 +25,7 @@
 }
 
 
-@media (orientation: portrait){ 
+@media (max-width: 480px) and (orientation: portrait) { 
     /* ::-webkit-scrollbar{display: none;} */
 
     html{
