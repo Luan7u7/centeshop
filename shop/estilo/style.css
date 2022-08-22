@@ -17,16 +17,15 @@
     --musgo: #A0CD60;
 }
 
-@media (orientation: landscape)
-{
+@media (orientation: landscape){
   header{
     background-color: black;
   }
 }
 
 
-@media (max-width: 480px) and (orientation: portrait) { 
-    /* ::-webkit-scrollbar{display: none;} */
+@media (orientation: portrait) { 
+    ::-webkit-scrollbar{display: none;}
 
     html{
         min-width: 375px;
