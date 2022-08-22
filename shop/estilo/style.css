@@ -153,6 +153,20 @@
         border-radius: 8px;
     }
 
+    #teste{
+        background-image: url(../imagens/67de04ff23291087f134473449315612.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    #teste2{
+        background-image: url(../imagens/3f519013b10d60aabb90ed1eb45d1148.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+
     .btnpop{
         display: flex;
         justify-content: center;
@@ -163,9 +177,10 @@
         font-size: 1.5em;
         font-weight: 100;
         bottom: 10px;
-        background-color: black;
+        background-color: rgb(3, 231, 223);
         width: 50px;
         height: 50px;
+        border: 1px solid rgba(0, 51, 87, 0.827);
         border-radius: 50%;
         transform: translate(-40px, 230px);
     }
