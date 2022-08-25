@@ -1,10 +1,22 @@
-anotações:
+anotações: ✖️ou✔️
 
-colocar a barra lateral (asside) quando clicar no hamburguinho 
+[✔️]  alinhar a barra de navegação na página.
+        [] ==> decidir se vou fazer os acessos do nav como iframes ou pop-ups estilo modal.
 
-fazer nav ficar responsivo
+[]  pop-up dos menus NAV como modal e fazer o script depois.
+        ==> essa parte provavelmente vai ser feita usando Js.
 
-colocar função e alinhar btn hambirguinho 
+[]  criar e colocar img pop-ups já redimensionadas e otimizadas.
+        ==> redimmensionar imagens no photoshop e testar fundo transparente nas imagens com o .imgproduto capturando uma cor da imagem e aplicando noo fundo. (obs: não sei fazer isso ainda)
 
+[]  alinhamento NAV (hamburguinho).
 
+[]  colocar asside na lateral com animação de transição.
 
+[]  textos e imagens de fundo da pagina.
+
+[]  revisão de design de cores e fontes.
+
+[]  pop-up modal de descrição do produto para colocar no carrinho.
+
+[]  script para adicinar itens ao carrinho.
