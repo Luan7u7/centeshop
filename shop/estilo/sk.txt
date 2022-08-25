@@ -11,7 +11,8 @@ anotações: ✖️ou✔️
 
 []  alinhamento NAV (hamburguinho).
 
-[]  colocar asside na lateral com animação de transição.
+[✔️]  colocar asside na lateral com animação de transição.
+        ==> com código Js para abrir e fechar. 
 
 []  textos e imagens de fundo da pagina.
 
@@ -20,3 +21,5 @@ anotações: ✖️ou✔️
 []  pop-up modal de descrição do produto para colocar no carrinho.
 
 []  script para adicinar itens ao carrinho.
+
+[] Js em outra página linkada no index (HTML).
