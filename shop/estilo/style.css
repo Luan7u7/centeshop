@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@
     --fundo1:      #495057;
     --fundo2:      #343a40;
     --fundo3:      #212529;
-
+    --textojordan: font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 
 @media (orientation: landscape){
@@ -33,19 +35,24 @@
     /* ::-webkit-scrollbar{display: none;} */
 
     html{
-        min-width: 375px;
-        min-height: 667px;
+        width: 375px;
+        height: auto;
+        max-width: 700px;
+        max-height: auto;
     }
+
     #body{
         background-color: var(--branco2);
-        min-width:100vw;
-        min-height:100vh;
+        width: 375px;
+        max-width: 700px;
+        max-height: auto;
+        height: 677px;
     }
     
     header{
         position: relative;
         background-position: cover;
-        width: 100vw;
+        width: 375px;
         height: 40vh;
         padding: 50px 30px;
         background: url(../imagens/caparealista.jpeg) no-repeat;
@@ -57,12 +64,17 @@
         position: absolute;
         top: 50px;
         right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         color: white;
         width: 40px;
         height: 40px;
         font-size: 2em;
         padding: 5px;
-        /* background-color: gray; */
+        border: 2px solid white;
+        border-radius: 50%;
     }
 
     .bx-list-plus{
@@ -110,7 +122,7 @@
         bottom: 0;
         left: 0px;
         width: 100vw;
-        height: 50px;
+        height: 60px;
         align-content: center;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.1));
         backdrop-filter: blur(10px);
@@ -126,15 +138,13 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        min-width: 60px;
-        min-height: 40px;
+        width: 70px;
+        height: 40px;
         margin-bottom: 4px;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
     }
 
-   
-    
     main{
         min-height: 667px;
         min-width: 375px;
@@ -144,20 +154,24 @@
 
     }
     
-    main section{
-        min-width: 375px;
-        width: 100vw;
-        /* background-color: var(--branco2); */
+    #s1{
+        max-width: 375px;
+        width: 375px;
     }
 
     main span{
         display: flex;
         justify-content: center;
         font-size: 1.7em;
-        background-color: red;
     }
 
-    #imgprodutopai{
+    #escolha{
+        width: 375px;
+        height: auto;
+    }
+
+
+    #airjordanblue{
         position: relative;
         display: flex;
         overflow-x: scroll;
@@ -169,20 +183,71 @@
         border-radius: 8px;
         gap: 20px;
     }
-
-    #imgprodutopai p{
+    #airjordanblue p{
         position: absolute;
         top: 0px;
         height: 30px;
-        font-size: 1.3em;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Alumni Sans Pinstripe';
         color: rgb(29, 29, 183);
     }
+    #airjordanblue .imgproduto{
+        flex: 0 0 100%;
+        padding: 24px;
+        scroll-snap-align: start;
+        width: 100px;
+        height: 300px;
+        border-radius: 8px;
+        box-shadow:
+        -0.1px 0px 0.6px -5px rgba(0, 0, 0, 0.119),
+        -0.2px 0px 2.2px -5px rgba(0, 0, 0, 0.153),
+        -0.2px 0px 5.6px -5px rgba(0, 0, 0, 0.178),
+        0.4px 0px 12.5px -5px rgba(0, 0, 0, 0.201),
+        1px 0px 24px -5px rgba(0, 0, 0, 0.23)
+    }
+    #airjordanblue :nth-child(2){
+        /* 1 */
+        background-image: url(../imagens/0.jpeg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+    #airjordanblue :nth-child(3){
+        /* 2 */
+        background-image: url(../imagens/1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanblue :nth-child(4){
+        /* 3 */
+        background-image: url(../imagens/4.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanblue :nth-child(5){
+        /* 4 */
+        background-image: url(../imagens/3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    #airjordanblue :nth-child(6){
+        /* 4 */
+        background-image: url(../imagens/);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
 
-    #imgprodutomae{
+
+    #airjordanwhite{
         position: relative;
         display: flex;
         overflow-x: scroll;
-        padding: 24px;
+        padding: 30px 24px;
         width: 280px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
@@ -190,15 +255,16 @@
         border-radius: 8px;
         gap: 20px;
     }
-
-    #imgprodutomae p{
+    #airjordanwhite p{
         position: absolute;
         top: 0px;
-        font-size: 1.3em;
         height: 30px;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Alumni Sans Pinstripe';
+        color: red;
     }
-
-    #imgprodutopai .imgproduto{
+    #airjordanwhite .imgproduto{
         flex: 0 0 100%;
         padding: 24px;
         scroll-snap-align: start;
@@ -212,8 +278,77 @@
         0.4px 0px 12.5px -5px rgba(0, 0, 0, 0.201),
         1px 0px 24px -5px rgba(0, 0, 0, 0.23)
     }
+    #airjordanwhite :nth-child(2){
+        /* 1 */
+        background-image: url(../imagens/banco1.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(3){
+        /* 2 */
+        background-image: url(../imagens/banco2.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(4){
+        /* 2 */
+        background-image: url(../imagens/banco3.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(5){
+        /* 2 */
+        background-image: url(../imagens/banco4.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(6){
+        /* 2 */
+        background-image: url(../imagens/banco5.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(7){
+        /* 2 */
+        background-image: url(../imagens/banco6.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
 
-    #imgprodutomae .imgproduto{
+    #airjordanblack{
+        position: relative;
+        display: flex;
+        overflow-x: scroll;
+        padding: 30px 24px;
+        width: 280px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        margin: 45px;
+        border-radius: 8px;
+        gap: 20px;
+    }
+    #airjordanblack p{
+        position: absolute;
+        top: 0px;
+        height: 30px;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Alumni Sans Pinstripe';
+        color: black;
+    }
+    #airjordanblack .imgproduto{
         flex: 0 0 100%;
         padding: 24px;
         scroll-snap-align: start;
@@ -227,90 +362,58 @@
         0.4px 0px 12.5px -5px rgba(0, 0, 0, 0.201),
         1px 0px 24px -5px rgba(0, 0, 0, 0.23)
     }
-
-    #imgprodutopai .imgproduto:nth-child(1){
+    #airjordanblack :nth-child(2){
         /* 1 */
-        background-image: url(../imagens/1.jpeg);
-        background-size: cover;
-        background-position: bottom center;
+        background-image: url(../imagens/retroleft.webp);
+        background-color: #F6F6F6;
         background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
     }
-
-    #imgprodutopai .imgproduto:nth-child(2){
+    #airjordanblack .imgproduto:nth-child(3){
         /* 2 */
-        background-image: url(../imagens/3.png);
+        background-image: url(../imagens/retrosola.webp);
+        background-color: #F6F6F6;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: bottom center;
     }
-
-    #imgprodutopai .imgproduto:nth-child(3){
-        /* 3 */
-        background-image: url(../imagens/4.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
-    #imgprodutopai .imgproduto:nth-child(4){
-        /* 4 */
-        background-image: url(../imagens/2.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-    
-    #imgprodutomae .imgproduto:nth-child(1){
-        /* 1 */
-        background-image: url(../imagens/0.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
-    #imgprodutomae .imgproduto:nth-child(2){
+    #airjordanblack .imgproduto:nth-child(4){
         /* 2 */
-        background-image: url(../imagens/11.jpeg);
+        background-image: url(../imagens/retroright.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanblack .imgproduto:nth-child(5){
+        /* 2 */
+        background-image: url(../imagens/retropar.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanblack .imgproduto:nth-child(6){
+        /* 2 */
+        background-image: url(../imagens/retrocima.webp);
+        background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
     }
-
-    #imgprodutomae .imgproduto:nth-child(3){
-        /* 3 */
-        background-image: url(../imagens/17.jpeg);
+    #airjordanblack .imgproduto:nth-child(7){
+        /* 2 */
+        background-image: url(../imagens/retrobico.webp);
+        background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
     }
-
-    #imgprodutomae .imgproduto:nth-child(4){
-        /* 4 */
-        background-image: url(../imagens/16.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
-    #imgprodutomae .imgproduto:nth-child(5){
-        /* 5 */
-        background-image: url(../imagens/5.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
-    #imgprodutomae .imgproduto:nth-child(6){
-        /* 6 */
-        background-image: url(../imagens/12.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
-
-    #imgprodutomae .imgproduto:nth-child(7){
-        /* 7 */
-        background-image: url(../imagens/9.jpeg);
+    #airjordanblack .imgproduto:nth-child(8){
+        /* 2 */
+        background-image: url(../imagens/retroheel.webp);
+        background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
@@ -326,23 +429,27 @@
         font-size: 1.5em;
         font-weight: 100;
         border-radius: 50px;
-        background: linear-gradient(145deg, #dde7ff, #8e95a7);
+        background: linear-gradient(145deg, #f6f9ff, #c3c3c3);
         box-shadow:  1px 1px 8px #343b4c, -1px -1px 8px #c8daec;
         width: 40px;
         height: 40px;
         transform: translate(-27px, 240px);
     }
 
-    main #s2{
+    #s2{
+        width: 375px;
+        height: auto;
+    }
+
+    #s2 p{
         padding: 20px;
         text-align: justify;
         line-height: 1.3em;
-        margin: auto;
     }
-    
+
     /* o asside está desligado para ser chamado pelo hamburguinho */
     main #barramenu{
-        visibility: hidden;
+        visibility: visible;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -369,7 +476,41 @@
             color: blue;
     }
 
+    .switch{
+        width: 50px;
+        height: 30px;
+        border-radius: 100px;
+        cursor: pointer;
+        background: #c9c9c9;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+    }
 
-    
+    .switch::before {
+        content: '';
+        display: block;
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        left: 3px;
+    }
+
+    .switch-input {
+        display: none;
+    }
+
+    .switch-input:checked + .switch{
+        background-color: #4c86d8;
+    }
+
+    .switch-input:checked + .switch::before {
+        background: #fff;
+        left: calc((50px - 22px) - 3px);
+    }
+
 
 }
