@@ -52,7 +52,7 @@
     header{
         position: relative;
         background-position: cover;
-        width: 375px;
+        width: 100vw;
         height: 40vh;
         padding: 50px 30px;
         background: url(../imagens/caparealista.jpeg) no-repeat;
@@ -417,6 +417,100 @@
         background-position: bottom center;
     }
 
+
+    #airjordanorange{
+        position: relative;
+        display: flex;
+        overflow-x: scroll;
+        padding: 30px 24px;
+        width: 280px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 24px;
+        margin: 45px;
+        border-radius: 8px;
+        gap: 20px;
+    }
+    #airjordanorange p{
+        position: sticky;
+        display: flex;
+        margin: 5px;
+        width: 300px;
+        height: 30px;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Alumni Sans Pinstripe';
+        color: orangered;
+    }
+    #airjordanorange .imgproduto{
+        flex: 0 0 100%;
+        padding: 24px;
+        scroll-snap-align: start;
+        width: 100px;
+        height: 300px;
+        border-radius: 8px;
+        box-shadow:
+        -0.1px 0px 0.6px -5px rgba(0, 0, 0, 0.119),
+        -0.2px 0px 2.2px -5px rgba(0, 0, 0, 0.153),
+        -0.2px 0px 5.6px -5px rgba(0, 0, 0, 0.178),
+        0.4px 0px 12.5px -5px rgba(0, 0, 0, 0.201),
+        1px 0px 24px -5px rgba(0, 0, 0, 0.23)
+    }
+    #airjordanorange :nth-child(2){
+        /* 1 */
+        background-image: url(../imagens/laranjaleft.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(3){
+        /* 2 */
+        background-image: url(../imagens/laranjasola.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(4){
+        /* 2 */
+        background-image: url(../imagens/laranjaright.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(5){
+        /* 2 */
+        background-image: url(../imagens/laranjapar.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(6){
+        /* 2 */
+        background-image: url(../imagens/laranjacima.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(7){
+        /* 2 */
+        background-image: url(../imagens/laranjabico.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanorange .imgproduto:nth-child(8){
+        /* 2 */
+        background-image: url(../imagens/larranjaheel.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
     .btnpop{
         display: flex;
         justify-content: center;
