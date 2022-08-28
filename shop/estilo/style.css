@@ -448,7 +448,7 @@
     }
 
     /* o asside está desligado para ser chamado pelo hamburguinho */
-    main #barramenu{
+    #barramenu{
         visibility: visible;
         display: flex;
         flex-direction: column;
@@ -456,7 +456,7 @@
         align-items: center;
         align-content: center;
         position: absolute;
-        right: 0px;
+        left: 375px;
         top: 15%;
         width: 120px;
         height: 400px;
@@ -483,12 +483,13 @@
         cursor: pointer;
         background: #c9c9c9;
         display: flex;
+        position: relative;
         align-items: center;
         transition: all 0.5s;
     }
 
     .switch::before {
-        content: '';
+        content: "";
         display: block;
         background-color: #fff;
         width: 22px;
@@ -496,7 +497,7 @@
         border-radius: 50%;
         position: absolute;
         transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        left: 3px;
+        left: 5px;
     }
 
     .switch-input {
@@ -509,7 +510,7 @@
 
     .switch-input:checked + .switch::before {
         background: #fff;
-        left: calc((50px - 22px) - 3px);
+        left: calc((50px - 22px) - 5px);
     }
 
 
