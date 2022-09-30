@@ -9,6 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     user-select: none;
+    border-style: none;
 }
 
 :root{
@@ -31,7 +32,7 @@
 }
 
 
-@media (orientation: portrait) { 
+@media (orientation: portrait)  { 
     /* ::-webkit-scrollbar{display: none;} */
 
     html{
@@ -39,6 +40,7 @@
         height: auto;
         max-width: 700px;
         max-height: auto;
+        margin: auto;
     }
 
     #body{
@@ -47,6 +49,7 @@
         max-width: 700px;
         max-height: auto;
         height: 677px;
+        margin: auto;
     }
     
     header{
@@ -102,7 +105,6 @@
     input{
         min-width: 300px;
         border: none;
-        padding: 10px 20px;
         border-radius: 15px;
         opacity: 0.9;
         box-shadow: 0px 4px 8px #0418549f;
@@ -125,15 +127,13 @@
         height: 60px;
         align-content: center;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.1));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(4px);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
         border: 1px solid rgba(255, 255, 255, 0.18);
         z-index: 99;
     }
 
     header nav a{
-        filter: invert();
         display: flex;
         justify-content: center;
         align-items: center;
@@ -164,17 +164,18 @@
     }
 
     #escolha{
+        display: flex;
+        flex-direction: column;
         width: 375px;
         height: auto;
     }
 
-
     #airjordanblue{
         position: relative;
-        display: flex;
+        display: none;
         overflow-x: scroll;
         padding: 30px 24px;
-        width: 280px;
+        width: 300px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
         margin: 45px;
@@ -183,12 +184,17 @@
     }
     #airjordanblue p{
         position: absolute;
-        top: 0px;
+        top: 40px;
+        left: 40px;
+        display: flex;
+        width: 200px;
         height: 30px;
         font-size: 1.8em;
+        line-height: 25px;
         font-weight: bolder;
         font-family: 'Alumni Sans Pinstripe';
-        color: rgb(29, 29, 183);
+        color: black;
+        z-index: 30;
     }
     #airjordanblue .imgproduto{
         flex: 0 0 100%;
@@ -232,21 +238,15 @@
         background-size: cover;
         background-position: center center;
     }
-    #airjordanblue :nth-child(6){
-        /* 4 */
-        background-image: url(../imagens/);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-    }
+ 
 
 
     #airjordanwhite{
         position: relative;
-        display: flex;
+        display: none;
         overflow-x: scroll;
         padding: 30px 24px;
-        width: 280px;
+        width: 300px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
         margin: 45px;
@@ -255,12 +255,17 @@
     }
     #airjordanwhite p{
         position: absolute;
-        top: 0px;
+        top: 40px;
+        left: 40px;
+        display: flex;
+        width: 200px;
         height: 30px;
         font-size: 1.8em;
+        line-height: 25px;
         font-weight: bolder;
         font-family: 'Alumni Sans Pinstripe';
-        color: red;
+        color: tomato;
+        z-index: 30;
     }
     #airjordanwhite .imgproduto{
         flex: 0 0 100%;
@@ -278,7 +283,7 @@
     }
     #airjordanwhite :nth-child(2){
         /* 1 */
-        background-image: url(../imagens/banco1.webp);
+        background-image: url(../imagens/brancoleft.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: contain;
@@ -286,7 +291,7 @@
     }
     #airjordanwhite .imgproduto:nth-child(3){
         /* 2 */
-        background-image: url(../imagens/banco2.webp);
+        background-image: url(../imagens/brancosola.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: contain;
@@ -294,7 +299,7 @@
     }
     #airjordanwhite .imgproduto:nth-child(4){
         /* 2 */
-        background-image: url(../imagens/banco3.webp);
+        background-image: url(../imagens/brancoright.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: contain;
@@ -302,15 +307,15 @@
     }
     #airjordanwhite .imgproduto:nth-child(5){
         /* 2 */
-        background-image: url(../imagens/banco4.webp);
+        background-image: url(../imagens/brancopar.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: bottom center;
     }
     #airjordanwhite .imgproduto:nth-child(6){
         /* 2 */
-        background-image: url(../imagens/banco5.webp);
+        background-image: url(../imagens/brancocima.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: cover;
@@ -318,7 +323,15 @@
     }
     #airjordanwhite .imgproduto:nth-child(7){
         /* 2 */
-        background-image: url(../imagens/banco6.webp);
+        background-image: url(../imagens/brancobico.webp);
+        background-color: #F6F6F6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+    #airjordanwhite .imgproduto:nth-child(8){
+        /* 2 */
+        background-image: url(../imagens/brancoheel.webp);
         background-color: #F6F6F6;
         background-repeat: no-repeat;
         background-size: cover;
@@ -327,10 +340,10 @@
 
     #airjordanblack{
         position: relative;
-        display: flex;
+        display: none;
         overflow-x: scroll;
         padding: 30px 24px;
-        width: 280px;
+        width: 300px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
         margin: 45px;
@@ -339,12 +352,17 @@
     }
     #airjordanblack p{
         position: absolute;
-        top: 0px;
+        top: 40px;
+        left: 40px;
+        display: flex;
+        width: 200px;
         height: 30px;
         font-size: 1.8em;
+        line-height: 25px;
         font-weight: bolder;
         font-family: 'Alumni Sans Pinstripe';
         color: black;
+        z-index: 30;
     }
     #airjordanblack .imgproduto{
         flex: 0 0 100%;
@@ -423,28 +441,18 @@
         display: flex;
         overflow-x: scroll;
         padding: 30px 24px;
-        width: 280px;
+        width: 300px;
         scroll-snap-type: x mandatory;
         scroll-padding: 24px;
         margin: 45px;
         border-radius: 8px;
         gap: 20px;
     }
-    #airjordanorange p{
-        position: sticky;
-        display: flex;
-        margin: 5px;
-        width: 300px;
-        height: 30px;
-        font-size: 1.8em;
-        font-weight: bolder;
-        font-family: 'Alumni Sans Pinstripe';
-        color: orangered;
-    }
     #airjordanorange .imgproduto{
+        position: relative;
         flex: 0 0 100%;
         padding: 24px;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         width: 100px;
         height: 300px;
         border-radius: 8px;
@@ -455,6 +463,22 @@
         0.4px 0px 12.5px -5px rgba(0, 0, 0, 0.201),
         1px 0px 24px -5px rgba(0, 0, 0, 0.23)
     }
+
+    #airjordanorange p{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        display: flex;
+        width: 200px;
+        height: 30px;
+        font-size: 1.8em;
+        line-height: 25px;
+        font-weight: bolder;
+        font-family: 'Alumni Sans Pinstripe';
+        color: orangered;
+        z-index: 30;
+    }
+
     #airjordanorange :nth-child(2){
         /* 1 */
         background-image: url(../imagens/laranjaleft.webp);
@@ -511,7 +535,11 @@
         background-size: cover;
         background-position: bottom center;
     }
-    .btnpop{
+
+    #btnpop{
+        position: sticky;
+        margin: 50px 30px;
+        bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -522,19 +550,30 @@
         font-weight: 100;
         border-radius: 50px;
         background: linear-gradient(145deg, #f6f9ff, #c3c3c3);
-        box-shadow:  1px 1px 8px #343b4c, -1px -1px 8px #c8daec;
+        box-shadow:  1px 1px 6px rgba(0, 0, 0, 0.25), 1px -1px 6px rgba(0, 0, 0, 0.147);
         width: 40px;
         height: 40px;
-        transform: translate(-27px, 240px);
+        cursor: pointer;
     }
 
+    .telamais{
+        display: none;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 20px  auto;
+        width: 320px;
+        height: 550px;
+        background-color: red;
+    }
+   
     #s2{
         width: 375px;
         height: auto;
     }
 
     #s2 p{
-        padding: 20px;
+        padding: 20px 40px 60px 40px;
         text-align: justify;
         line-height: 1.3em;
     }
@@ -556,7 +595,6 @@
         border-bottom-left-radius: 80%;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.1));
         backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
         border: 1px solid rgba(255, 255, 255, 0.18);
         /* transform: translateX(170px); */
@@ -564,7 +602,6 @@
         
         #barramenu a{
             display: flex;
-            padding: 10px 20px;
             color: blue;
     }
 
@@ -604,6 +641,6 @@
         background: #fff;
         left: calc((50px - 22px) - 5px);
     }
-
-
+    
+    
 }

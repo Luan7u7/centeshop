@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="shop/estilo/style.css">
     <link rel="script" href="script.js">
     <title>Center Shop</title>
+    <script src="script.js"></script>
 </head>
 
 <body id="body">
@@ -40,156 +41,137 @@
     <section id="s1">
 
         <div id="escolha">
+
             <div id="airjordanblue">
-                <p>Air Jordan Blue</p>
+
+                <p>Air Jordan <br> Blue -07</p>
+
                 <div id="teste" class="imgproduto">
                 <div class="btnpop"><a href="">+</a></div>
-
                 </div>
+
                 <div id="teste2" class="imgproduto">
-                <div class="btnpop"><a href="">+</a></div>
+                </div>
+                
+                <div class="imgproduto">
+                </div>
 
-                </div>
                 <div class="imgproduto">
-                <div class="btnpop"><a href="">+</a></div>
                 </div>
-                <div class="imgproduto">
-                <div class="btnpop"><a href="">+</a></div>
-                </div>
+             
             </div>
 
             <div id="airjordanwhite">
 
-                <p>Air Jordan White</p>
+                <p>Air Jordan <br> White -32</p>
 
                 <div class="imgproduto">
                 <div class="btnpop"><a href="#">+</a></div>
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div> 
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div> 
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div> 
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>      
+             
             </div>
 
             <div id="airjordanblack">
 
-                <p>Air Jordan black</p>
+                <p>Air Jordan <br> black -06</p>
 
                 <div class="imgproduto">
                 <div class="btnpop"><a href="#">+</a></div>
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
                 
                 <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
                 </div>
-
+                
             </div>
-
+    
             <div id="airjordanorange">
+                
+                <p>Air jordan <br> Orange -99</p>
+                
+                
+                <div class="imgproduto">
+                    <div id="btnpop" onclick="mais()"></div>
+                    <button>x</button>
+                </div>
+                
+                <div class="imgproduto">
+                </div>
+                
+                <div class="imgproduto">
+                </div>
+                
+                <div class="imgproduto">
+                </div>
+                
+                <div class="imgproduto">
+                </div>
+                
+                <div class="imgproduto">
+                </div>
+                
+                <div class="imgproduto">
+                </div>
 
-                <p>Air jordan Orange</p>
-
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
-                <div class="imgproduto">
-                <div class="btnpop"><a href="#">+</a></div>
-                </div>
-                
             </div>
+            
         </div>
 
     </section>
 
     <section id="s2">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus possimus consequuntur repellendus exercitationem quisquam distinctio cumque autem laboriosam sunt, corrupti laborum nobis placeat temporibus, rerum voluptates deserunt omnis reprehenderit facere?</p>
+        <p>Lorem, ipsum dolor sit amet consecs deserunt omnis reprehenderit facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum at odit minus molestiae itaque ut tempora ex, et reiciendis debitis alias, deserunt consequatur qui amet delectus veritatis nostrum iste quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia iste sed dignissimos laboriosam non laudantium, pariatur quis necessitatibus adipisci. A provident perferendis eaque eum inventore maxime voluptatibus tenetur. Vitae.</p>
     </section>
+
 
 <!-- laranja -->
     <div id="barramenu">
+
         <input type="checkbox" id="switch" class="switch-input">
+
         <label for="switch" class="switch"></label>
+
         <a href="#">item</a>
         <a href="#">item</a>
         <a href="#">item</a>
     </div>
+
+   
 </main>
 
-<script>
-    function clickmenu(){
-        if (barramenu.style.visibility == 'hidden'){
-            barramenu.style.visibility = 'visible'
-        } else {
-            barramenu.style.visibility = 'hidden'
-        }
-    }
 
-    function modoescuro(){
-        if(body.style.backgroundcolor == 'var(--branco2)'){
-            body.style.backgroundcolor = 'var(--fundo2)'
-        } else {
-            body.style.backgroundcolor = 'var(branco2)'
-        }
-    }
-    !function(){document.body.hasAttribute("cz-shortcut-listen")||(document.body.setAttribute("cz-shortcut-listen","true"),document.body.addEventListener("keydown",function(a){var b=navigator.userAgent.toLowerCase().indexOf("mac")>-1,c=a.keyCode;(a.ctrlKey&&a.altKey&&!b||a.metaKey&&a.altKey&&b)&&c>64&&91>c&&chrome.extension.sendRequest({"op":"hotkey-pressed","keyCode":c})},!1))}();
-</script>
 
 </body>
 

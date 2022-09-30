@@ -6,8 +6,8 @@ anotações: ✖️ou✔️
 []  pop-up dos menus NAV como modal e fazer o script depois.
         ==> essa parte provavelmente vai ser feita usando Js.
 
-[]  criar e colocar img pop-ups já redimensionadas e otimizadas.
-        ==> redimmensionar imagens no photoshop e testar fundo transparente nas imagens com o .imgproduto capturando uma cor da imagem e aplicando noo fundo. (obs: não sei fazer isso ainda)
+[✔️]  criar e colocar img pop-ups já redimensionadas e otimizadas.
+        
 
 []  alinhamento NAV (hamburguinho).
 
